@@ -90,11 +90,7 @@ Find the rubric [here](./rubric.md).
 
 	- *Tip*: To do this with the prompts that expect an integer, you will need to read in a `String`, check for "Quit", then use `Integer.parseInt(value)` to convert the user input to an `int`.
 	- *Also tip*: You can call `System.exit(0);` to terminate your program immediately.
-	- *Also also tip*: Rather than typing the same code over and over, you can create a method that calls `System.exit(0);` if the user typed "Quit", then call that method, passing it the user input. Its *signature* should look something like:
-
-	```java
-	public static void checkForQuit(String userInput)
-	```
+	
 
 - [ ] Research `while` (page 115 in the *Head Start* book) or `do/while` loops and use them to check whether a user typed "Help" for favorite color, printing the list of colors each time the user types "Help".
 
