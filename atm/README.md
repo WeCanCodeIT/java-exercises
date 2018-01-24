@@ -70,16 +70,16 @@ Update your `AtmClientApp`, adding a `Press 4 to exit` option. Keep prompting th
 ## Examples
 
 ```bash
-Welcome to Bank of We Can Code IT ATM.
-Please enter your PIN:
+Enter your PIN: 
 1234
-
-What would you like to do next?
- Press 1 to deposit funds
- Press 2 to withdraw funds
- Press 3 to check balance
- Press 4 to exit
-
-4
-Thank you. Have a nice day!
+Welcome to Bank of We Can Code IT!
+Choose an option.
+Press 1 to deposit funds.
+Press 2 to withdrawal funds.
+Pre ss 3 to check balance.
+Press 4 to exit.
+1
+Enter a deposit amount
+50
+Updated bal is: 150.0
 ```
