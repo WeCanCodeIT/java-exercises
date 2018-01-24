@@ -76,7 +76,7 @@ Welcome to Bank of We Can Code IT!
 Choose an option.
 Press 1 to deposit funds.
 Press 2 to withdrawal funds.
-Pre ss 3 to check balance.
+Press 3 to check balance.
 Press 4 to exit.
 1
 Enter a deposit amount
