@@ -28,6 +28,8 @@ Think of which instance variables and methods you will need. We give suggestions
 
 Most games include what is called a *game loop*, a loop which updates everything in the game, representing the passage of time. We exit this loop when something happens that should cause the game to end. Include a `tick()` method (think clocks, not parasites) in your `VirtualPet` class representing the passage of a unit of time. This should do things like update instance variables of `VirtualPet` that are time dependent, such as hunger or thirst. You should call the `tick()` to represent the passage of time after each interaction with the user.
 
+There is always some confusion with this `tick()` method. It has some flexibility, what you are doing is changing the properties of your Virtual Pet at some rate in this method...every time this method is called, those properties specified in this method would update. 
+
 ### Ideas
 
 Attributes (instance variables) that a virtual pet might have, along with some ideas for activities (methods) that might address them are:
