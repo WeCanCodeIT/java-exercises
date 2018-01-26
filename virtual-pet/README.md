@@ -7,8 +7,8 @@ Create a virtual pet. Bonus points if it becomes a fad!
 - [ ] In Git Bash `mkdir virtual-pet`.
 - [ ] `cd` into the `virtual-pet` directory
 - [ ] copy and paste `curl https://raw.githubusercontent.com/WeCanCodeIT/gradle-scripts/master/basic-junit/build.gradle --output build.gradle`
-- [ ] execute an `ls` to make sure that you see a `build.gradle` inside of `virtual-pet`
-- [ ] `gradle eclipse` to finish set up of your project in bash
+- [ ] type `ls` to make sure that you see a `build.gradle` inside of `virtual-pet`
+- [ ] type `gradle eclipse` to finish set up of your project in bash
 - [ ] in Eclipse, import existing project into workspace
 - [ ] Create a README.md file in your project folder to describe what you've done with your project. No fancy formatting is necessary. Just separate paragraphs with an empty line. (If you'd like to learn more about Markdown formatting, check out the [Github Markdown Guide](https://guides.github.com/features/mastering-markdown/).)
 - [ ] Create a GitHub repository also named `virtual-pet` and set it up so that you can push your code there from your Eclipse project. Do this *now*. It's the least fun part, so just get it out of the way.
