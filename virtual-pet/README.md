@@ -16,8 +16,8 @@ Create a virtual pet. Bonus points if it becomes a fad!
 ## Classes
 - [ ] create a `VirtualPet` class.
 - [ ] create a `VirtualPetApp` class with a `main` method.
-- [ ] **Stretch goal** create a `VirtualPetTest` class 
-You should house your project in a properly named package...something other than the default package
+- [ ] **Stretch goal** create a `VirtualPetTest` class to build out unit tests on the behaviors placed in `VirtualPet`
+- You should house your project in a properly named package...something other than the default package
 
 
 ## Details
