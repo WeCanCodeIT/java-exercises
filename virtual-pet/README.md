@@ -118,6 +118,8 @@ Here is the [rubric](./rubric.md).
   
 - [ ] Assign favorite foods to your pet, and add a parameter specifying the type of food to the method you use to feed your pet. Your pet should react accordingly. You could also decide which foods it does *not* like.
 
+- [ ] Create Unit Tests!
+
 ## Hints
 
-Don't try to tackle everything at once! Break this project up into smaller chunks, and you will find that they are all manageable.
+Don't try to tackle everything at once! Break this project up into smaller chunks, and you will find that they are all manageable. (Getting comfortable testing as you go will make this project more manageable!!)
