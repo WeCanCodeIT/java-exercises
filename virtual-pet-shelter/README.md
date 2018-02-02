@@ -103,7 +103,9 @@ In addition to the requirements from [last week's project](../virtual-pet):
 
 Do **not** include a default (zero arguments) constructor.
 
-## [Rubric](https://wecancodeit.github.io/java-exercises/virtual-pet-shelter/README
+### Grading
+
+Here is the [rubric](./rubric.md).
 
 ## Stretch Tasks
 
