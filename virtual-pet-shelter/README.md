@@ -5,7 +5,7 @@ So, you have some experience under your belt in the care and feeding of a virtua
 ## Setup
 
 - [ ] Create a Java project in Eclipse named `virtual-pet-shelter`.
-- [ ] Be sure to set up your [testing environment](https://github.com/WeCanCodeIT/gradle-scripts) Use the second script, now that you have experience with both JUnit and Hamcrest
+- [ ] Be sure to set up your [testing environment](https://github.com/WeCanCodeIT/gradle-scripts) and use the second script, now that you have experience with both JUnit and Hamcrest
 - [ ] Set up a `.gitignore` remember through bash you can type `subl .gitignore` and it will open a text editor for you
 - [ ] Create a README.md file in your project folder to describe what you've done with your project. No fancy formatting is necessary. Just separate paragraphs with an empty line. (If you'd like to learn more about Markdown formatting, check out the [Github Markdown Guide](https://guides.github.com/features/mastering-markdown/).)
 - [ ] Create a GitHub repository also named `virtual-pet-shelter` and set it up so that you can push your code there from your Eclipse project. Do this *now*. It's the least fun part, so just get it out of the way.
