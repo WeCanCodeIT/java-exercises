@@ -5,16 +5,18 @@ So, you have some experience under your belt in the care and feeding of a virtua
 ## Setup
 
 - [ ] Create a Java project in Eclipse named `virtual-pet-shelter`.
+- [ ] Be sure to set up your [testing environment](https://github.com/WeCanCodeIT/gradle-scripts) Use the second script, now that you have experience with both JUnit and Hamcrest
+- [ ] Set up a `.gitignore` remember through bash you can type `subl .gitignore` and it will open a text editor for you
 - [ ] Create a README.md file in your project folder to describe what you've done with your project. No fancy formatting is necessary. Just separate paragraphs with an empty line. (If you'd like to learn more about Markdown formatting, check out the [Github Markdown Guide](https://guides.github.com/features/mastering-markdown/).)
 - [ ] Create a GitHub repository also named `virtual-pet-shelter` and set it up so that you can push your code there from your Eclipse project. Do this *now*. It's the least fun part, so just get it out of the way.
-- Create the following classes:
+- Create the following classes along with the test class(es) you feel are necessary:
 	- [ ] `VirtualPet`: You can start with your class from last week's assignment or create another.
 	- [ ] `VirtualPetShelter`: Homeless virtual pets need a place to stay.
 	- [ ] `VirtualPetShelterApp`: This class will house your `main` method, and be responsible for reading user input and writing output to the console.
 
 ## Details
 
-We're going to create an application that simulates you taking care of the pets in a shelter.
+We're going to use TDD to drive the creation of an application that simulates you taking care of the pets in a shelter.
 
 Include a game loop in this project, too. It should query the user, then call the appropriate method(s) on `VirtualPetShelter` and/or `VirtualPet`.
 
@@ -58,7 +60,7 @@ Tommy
 Ok, you play with Tommy.
 ```
 
-## Required Tasks
+## Required Tasks to be completed in the order you feel is necessary
 
 ### VirtualPetShelterApp class
 
