@@ -81,6 +81,7 @@ Phil has increased patient health to 20
 Harry has increased patient health to 20
 Jackie has increased patient health to 15
 ```
+As you look at this output to the console, the true/false attached to some of the employees simply represents the state they are in relative to if they are currently involved in their jobs or not.  
 
 ### Part 4
 - Stretch task: Tina is an `EmergencyDispatcher`. She is a trained medical professional and a first responder. She also has great people skills and can answer calls and manage what ambulance gets sent to a situation. She sometimes joins the crew and respondes to calls on the fly. Add her as an employee and give her the proper functionality. This job pays 45,000.
