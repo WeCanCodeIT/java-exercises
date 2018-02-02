@@ -5,8 +5,15 @@ So, you have some experience under your belt in the care and feeding of a virtua
 ## Setup
 
 - [ ] Create a Java project in Eclipse named `virtual-pet-shelter`.
-- [ ] Be sure to set up your [testing environment](https://github.com/WeCanCodeIT/gradle-scripts) and use the second script, now that you have experience with both JUnit and Hamcrest
-- [ ] Set up a `.gitignore` remember through bash you can type `subl .gitignore` and it will open a text editor for you
+- [ ] Be sure to set up your [testing environment](https://github.com/WeCanCodeIT/gradle-scripts) and use the second script, now that you have experience with both JUnit and Hamcrest.
+- [ ] Set up a `.gitignore`. Remember through bash you can type `subl .gitignore` and it will open a text editor for you. Its contents should include (at minimum):
+	```
+	.classpath
+	.gradle/
+	.project
+	.settings/
+	bin/
+	```
 - [ ] Create a README.md file in your project folder to describe what you've done with your project. No fancy formatting is necessary. Just separate paragraphs with an empty line. (If you'd like to learn more about Markdown formatting, check out the [Github Markdown Guide](https://guides.github.com/features/mastering-markdown/).)
 - [ ] Create a GitHub repository also named `virtual-pet-shelter` and set it up so that you can push your code there from your Eclipse project. Do this *now*. It's the least fun part, so just get it out of the way.
 - Create the following classes along with the test class(es) you feel are necessary:
@@ -18,7 +25,7 @@ So, you have some experience under your belt in the care and feeding of a virtua
 
 We're going to use TDD to drive the creation of an application that simulates you taking care of the pets in a shelter.
 
-Include a game loop in this project, too. It should query the user, then call the appropriate method(s) on `VirtualPetShelter` and/or `VirtualPet`.
+Include a game loop in this project, too. It should query the user, then call the appropriate method(s) on `VirtualPetShelter` and/or `VirtualPet`. In general, your `VirtualPetApp` should talk to your `VirtualPetShelter`, and your `VirtualPetShelter` should talk to your `VirtualPet`. Try to avoid `VirtualPetApp` talking directly to `VirtualPet` instances, apart from accessing basic information about pets (via `get*` methods).
 
 ### Example Interactions
 
