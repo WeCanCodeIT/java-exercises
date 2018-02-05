@@ -10,7 +10,7 @@
 High St. Hospital is an organizational mess.  They have unkempt files of employee information scattered throughout manilla folders, computer data files, and old tin filing cabinets (ok ok so its not 1992...but we needed a situation!).  With the madness of the daily grind, patients are the priority.  But the upmost care cannot be given to the patients if the hospital is disorganized.  High St. Hospital wants to get it together.  They have subcontracted We Can Code IT full-stack apprentices (who work for the reasonably inexpensive price of free) to come in and organize.  They enable you to set up shop with a few company laptops in an old dissheveled break room.  Your mission is to create a set of classes that contain information on the employees at Hammond Hospital:
 
 **High St. Hospital has the following model at its facility:**
--	`HospitalEmployee`
+-	`Employee`
       - initializes `patientHealth = 10` 
       -  `calculatePay()` abstract method with no specifications
       - appropriate getter methods and toString() 
@@ -27,7 +27,7 @@ High St. Hospital is an organizational mess.  They have unkempt files of employe
 ## The Data
 The following **Instance Data** will need to be taken care of for each employee
 
-- **`HospitalEmployee`**: Employee Name, Employee Number
+- **`Employee`**: Employee Name, Employee Number
 - **`Doctor`**: Employee Name, Employee Number, Specialty Area (Heart, Brain, Foot, etc…)
 - **`Surgeon`**: Employee Name, Employee Number, Specialty Area, and whether they are operating or not)
 - **`Nurse`**: Employee Name, Employee Number, and Number of Patients they are taking care of
