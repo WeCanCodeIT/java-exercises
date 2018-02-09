@@ -74,6 +74,10 @@ In addition to the last project's requirements:
 - Remember: don't get caught up in the user interface at first. Focus on shelter/pet behavior. Try to get one thing working at a time.
 - Try creating tests to verify pet behavior, limiting your immediate goal to something small.
 
+### Grading
+
+Here is the [rubric](./rubric.md).
+
 ## Stretch Tasks
 
 - Allow for other types of pets. Are they caged? What maintenance do they require?
