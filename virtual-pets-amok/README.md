@@ -44,7 +44,7 @@ In addition to the last project's requirements:
 - do not allow:
 	- [ ] feeding/watering robotic pets
 	- [ ] oiling organic pets
-- [ ] modify the `tick` method to return a value indicating the amount of waste a pet creates, which should contribute to either:
+- [ ] modify the `tick` method to return a value indicating the amount of waste a pet creates, which should contribute to either (optionally, create accessor methods to retrieve these values instead):
 	- [ ] amount of waste in the litter box
 	- [ ] amount of waste in an individual dog cage
 
