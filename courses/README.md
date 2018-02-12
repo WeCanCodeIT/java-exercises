@@ -23,7 +23,7 @@ Not an annotation but important to define:
 - Access through `Bash` and do a `gradle eclipse`
 - `import` through your Eclipse package explorer
 
-### Classes to build (will be demonstrated in the video tutorial)
+### Classes to build
 - **`Course`**: 
   - contains `String` object properties for `id`, `name`, and `description`
   - contains appropriate constructor, and getters 
