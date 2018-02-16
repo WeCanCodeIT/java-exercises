@@ -39,6 +39,10 @@ Create a Spring Boot + MVC app that displays a list of reviews, allowing us to c
 
 *Tip: Use [Creative Commons Image Search](https://ccsearch.creativecommons.org/) to find images that are free for use.*
 
+## Grading
+
+Find the rubric [here](./rubric.md).
+
 ### Thymeleaf Tips
 
 #### Iteration
