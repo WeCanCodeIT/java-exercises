@@ -25,8 +25,8 @@ Create a Spring Boot + MVC app that displays a list of reviews, allowing us to c
 - [ ] Create a `ReviewRepository` class
 	- [ ] This class should be a `@Component` so that it can be injected into `ReviewsController`.
 	- [ ] It should have a constructor that creates your `Review` instances and populates an instance variable of type `Map<Long, Review>` that stores your reviews, using each review's id as the map key.
-	- [ ] It should have a method with the signature `public Collection<Review> findAll()` that returns all of your reviews.
-	- [ ] It should have a method with the signature `public Review findOne(Long id)` that returns the review with the specified id.
+	- [ ] It should have a method to find all reviews
+	- [ ] It should have a method to find one review by id
 - [ ] Create a `ReviewsController` class.
 	- [ ] This class should be a `@Controller`.
 	- [ ] It should inject `ReviewRepository` as a `@Resource`.
