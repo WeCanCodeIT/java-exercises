@@ -2,8 +2,8 @@ Category|Max Score
 ---|---
 project hosted on username.github.io|10
 index.html|10
-`<header> element|8
-`<nav> element|7
+`<header>` element|8
+`<nav>` element|7
 use of Grid and Flexbox and not a framework| 10
 `<section>` elements|7
 headings `<h1>`, `<h2>` etc...|8
