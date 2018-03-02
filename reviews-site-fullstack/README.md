@@ -52,7 +52,9 @@ Feel free to use appropriate class names other than `Review` and `Category`, but
 - [ ] Style your tags list template as a *tag cloud*, making tags which appear more often larger and/or bolder and those that appear less often smaller and/or lower weight.
 - [ ] Allow creation and deletion of tags from a review using `<form>` and `<button>` elements along with the appropriate controller method(s).
 
-### Rubric(./rubric.md)
+## Grading
+
+Find the rubric [here](./rubric.md).
 
 ### Tips
 
