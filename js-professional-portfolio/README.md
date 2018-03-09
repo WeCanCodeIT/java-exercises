@@ -20,7 +20,7 @@ All requirements from iteration one of this project should still be there. You a
 * Change layout with media queries based on viewport width. Feel free to use other specific media rules but base media queries should be based on viewport width. (Most common)
 * Have the dropdown navigation menu only when at smaller viewports and the full navigation when at larger viewports
 
-## [Rubric](rubric.md)
+## [Rubric](https://wecancodeit.github.io/java-exercises/js-professional-portfolio/rubric.html)
 
 ## Tips
 
