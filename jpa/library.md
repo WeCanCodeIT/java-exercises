@@ -1,6 +1,7 @@
 # Library Pair Programming/ Mobbing Activity
 
 ## Objectives
+
 - Students will use **Object Relational Mapping (ORM)** to connect entities together 
 - Students will become familiar with the tools of the CRUD Repository
 - Students will create data to test by @Override of the run method of CommandLineRunner
@@ -12,24 +13,26 @@
 
 
 ## Setup
-- Use the Spring Initilizr to create `library-jpa`
-- Bring over the following dependencies
-  - Thymeleaf
-  - Devtools
-  - H2
-  - JPA
-  - Web
+
+Use the [Spring Initializr](https://start.spring.io) to create a `library-jpa` project, including the following dependencies:
+- Thymeleaf
+- JPA
+- H2
+- Devtools
 
 ## The Project Explanation
+
 Libraries categorize books by `Genre`. A `Book` can only belong to one `Genre` in our Library. Some of our authors are busy and they have written multiple books. An `Author` can also share duties, so multiple authors can write a single book. 
 
 ### The `Genre` Table
+
 |genre|
 |----|
 |Fiction|
 |Non Fiction|
 
 ### The `Author` Table
+
 |firstName|lastName|
 |----|--------|
 |Kathy|Sierra|
@@ -38,6 +41,7 @@ Libraries categorize books by `Genre`. A `Book` can only belong to one `Genre` i
 |Clifford|Stoll|
 
 ### The `Book` Table
+
 |genre|title|authors|
 |----|--------|---|
 |Non Fiction|Head First Design Patterns|Kathy Sierra, Bert Bates|
@@ -45,31 +49,41 @@ Libraries categorize books by `Genre`. A `Book` can only belong to one `Genre` i
 |Fiction|The Cukoo's Egg|Clifford Stoll|
 
 ### Determine your relationships
-- One of our tables has a `@OneToMany` relationship
-- One of our tables has a `@ManyToMany` relationship
-- One of our tables has both a `@ManyToOne` and a `@ManyToMany` relationship
+
+- One of our tables has a `@OneToMany` relationship.
+- One of our tables has a `@ManyToMany` relationship.
+- One of our tables has both a `@ManyToOne` and a `@ManyToMany` relationship.
 
 ## Build out the necessary files
-- An Entity class for each table
-- A Repository for each table
-- A Controller that handles requests to `genres.html`, `authors.html` and `books.html`
-- A Populator to build the database 
+
+- An `@Entity` class for each table
+- A repository for each table
+- One or more `@Controller`s that handles requests
+- Each response should be a view rendered by one of the Thymeleaf templates `genres.html`, `authors.html`, or `books.html`
+- A populator to populate the database
 
 ### Hints
+
 - The `@OneToMany` relationship will need to be `mappedBy`
-- One of the `@ManyToMany` annotations will need to be `mappedBy` this will be the non-owning side, the object that could possbily have multiples tied to a single book 
-- Your `Book` constructor must handle the multiple authors last in the params... it will look like this:
-  ```bash
-  public Book (Foo foo, Bar bar, FooBar ... fooBar){
+- The non-owning side of your `@ManyToMany` relationship will need to be `mappedBy`. Remember that in the case of a simple many-to-many relationship, deciding the "owning" side is arbitrary, chosen for convenience based on context.
+- In addition any other needful parameters, your `Book` constructor should handle multiple authors. It should look similar to this:
+
+  ```java
+  public Book(Foo foo, Bar bar, FooBar ... fooBar){
       this.foo = foo;
       this.bar = bar;
-      this.fooBar = new HashSet(Arrays.asList(fooBar));
-      }
-   ```
- - Use concatenation in Thymeleaf to display attributes in the same way you would in Java...with the + sign...only difference is you will use 'single quotes' to enclose Strings or empty space
-   ```bash
-   <p th:text="${'Name: ' + item.firstName + ' ' + item.lastName}"></p>
-   ```
- - Your Thymeleaf template for `Genre` will simply display the 2 genres
- - Your Thymeleaf template for `Author` will simply display the names of our authors
- - Your Thymeleaf template for `Book` will display genre, title and author **displaying the author is very challenging** don't get hung up on this part, we can show you the line of code needed to display our authors
+      this.fooBar = new HashSet<>(Arrays.asList(fooBar));
+  }
+  ```
+- Remember, you can perform concatentation in Thymeleaf using the `+` operator. Use single quotes (`'`) to enclose Strings if you used double quotes (`"`) to enclose your `th:text` attribute value (or vice versa):
+  ```xml
+  <p th:text="${'Name: ' + item.firstName + ' ' + item.lastName}" />
+  ```
+- Or… Use literal substitutions:
+  ```xml
+  <p th:text="|Name: ${item.firstName} ${item.lastName}|" />
+  ```
+
+- Your view for `Genre` will simply list the genres.
+- Your view for `Author` will simply list the names of our authors.
+- Your view for `Book` will display genre, title, and author.

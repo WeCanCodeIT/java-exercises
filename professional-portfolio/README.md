@@ -46,6 +46,9 @@ Any resources (images, etc) you use should be:
   - free for non-commercial use
   - copied to your repository and referenced there rather than via a uri pointing to another site
 
+## [Rubric](rubric.md)
+
+
 ## Tips
 
 - Section ids can be used to create anchors linking to those sections inside the page.
