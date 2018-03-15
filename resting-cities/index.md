@@ -51,7 +51,7 @@ Your API should support retrieving an individual state using a URL of the form `
 		"name": "Humuhumunukunukuāpuaʻa",
 		"binomialNomenclature": "Rhinecanthus rectangulus",
 		"imgUrl":
-			"https://upload.wikimedia.org/wikipedia/commons/5/52/Reef_Triggerfis	h_1.JPG"
+			"https://upload.wikimedia.org/wikipedia/commons/5/52/Reef_Triggerfish_1.JPG"
 	},
 	"citiesUrl": "/states/hi/cities"
 }
