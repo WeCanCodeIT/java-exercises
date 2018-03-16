@@ -6,6 +6,8 @@ We are returning to your reviews application. *Surprise!*
 
 You can create a new repository or use the same one. If you'd like to use the same one, but would like to keep track of the previous version of your project, you can create a branch or use an annotated tag.
 
+[Here](./rubric.md) lies the rubric.
+
 ## Review Tags
 
 If you didn't include tags before, add them. These should have a many-to-many relationship with reviews.
