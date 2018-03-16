@@ -1,25 +1,33 @@
-### Reviews Iteration 3
+# Reviews, The Next Generation
 
-- Dynamically add tags in your web application using buttons and text fields 
+We are returning to your reviews application. *Surprise!*
 
-- Dynamically remove tags in your web application using buttons and text fields 
+![Surprise](./photofunky.gif)
 
-**Notes on Tags** Give the user the option to add a tag to a particular review, and if that tag does not exist, it can be created and applied. 
+You can create a new repository or use the same one. If you'd like to use the same one, but would like to keep track of the previous version of your project, you can create a branch or use an annotated tag.
 
-- Update information in your reviews/templates to include the tags in the information you have provided to the user interface
+## Review Tags
 
-- Create a template to show all reviews that belong to a particular tag
+If you didn't include tags before, add them. These should have a many-to-many relationship with reviews.
 
-- Choose some words/titles in your page that you feel would be necessary to enhance with a mouse over to change the size of text
+Clicking on a tag should take the user to a page which displays the reviews associated with that tag.
 
-- Add a copyright with date in the footer and when the user either clicks or hovers (your choice of one of those tasks) over this text change it to say "created by Your Name"
+Using appropriate HTML elements and AJAX, allow the user to add and remove tags from reviews. Be careful not to create a new tag if a tag with that name already exists.
 
-- Dynamically add comments to reviews
+## Review Comments
 
-- Dynamically remove comments from reviews 
+Add comments to reviews. Comments should be listed on a review's page after the review's content.
 
-- Create a confirm box on any tag or comment you would like to remove
+Create a form on a review's page that adds a comment to a review. Perform an old school form submission rather than using AJAX. After submitting a comment, the user should be returned to the review page, now including the comment that was just submitted.
 
-**Stretch task**:
-- Create a drop down menu
+### Things to ponder
+
+What is the relationship between a review and its comments from the relational database perspective? Does a review or its comment own the relationship?
+
+How can we best semantically represent review comments from an HTML perspective?
+
+## Stretch tasks
+
+- Create snazzy confirmation prompts for removing tags
 - Use ES6 syntax
+- Oh, you've already thought of a few things. Do those, but keep them simple.

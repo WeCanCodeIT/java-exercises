@@ -4,7 +4,7 @@ Create a full stack webapp with a RESTful API that allows for the display of cit
 
 ## API requirements
 
-Other parts of the company may need to use this API as well. Let"s facilitate collaboration by creating endpoints that do the following:
+Other parts of the company may need to use this API as well. Let's facilitate collaboration by creating endpoints that do the following:
 
 ### List states
 
@@ -14,24 +14,25 @@ The url `/states` in your app should have a response similar to the following:
 
 ```json
 [
-    {
-        "abbreviation":"OH",
-        "name":"Ohio",
-        "motto":"Birthplace of Aviation",
-        "fish":null,
-        "citiesUrl":"/states/oh/cities"
-    },
-    {
-        "abbreviation":"HI",
-        "name":"Hawaii",
-        "motto":"The Islands of Aloha",
-        "fish":{
-            "name":"Humuhumunukunukuāpuaʻa",
-            "binomialNomenclature":"Rhinecanthus rectangulus",
-            "imgUrl":"https://upload.wikimedia.org/wikipedia/commons/5/52/Reef_Triggerfish_1.JPG"
-        },
-        "citiesUrl":"/states/hi/cities"
-    }
+	{
+		"abbreviation": "OH",
+		"name": "Ohio",
+		"motto": "Birthplace of Aviation",
+		"fish": null,
+		"citiesUrl": "/states/oh/cities"
+	},
+	{
+		"abbreviation": "HI",
+		"name": "Hawaii",
+		"motto": "The Islands of Aloha",
+		"fish": {
+			"name": "Humuhumunukunukuāpuaʻa",
+			"binomialNomenclature": "Rhinecanthus rectangulus",
+			"imgUrl":
+				"https://upload.wikimedia.org/wikipedia/commons/5/52/Reef_Triggerfish_1.JPG"
+		},
+		"citiesUrl": "/states/hi/cities"
+	}
 ]
 ```
 
@@ -43,15 +44,16 @@ Your API should support retrieving an individual state using a URL of the form `
 
 ```json
 {
-    "abbreviation":"HI",
-    "name":"Hawaii",
-    "motto":"The Islands of Aloha",
-    "fish":{
-        "name":"Humuhumunukunukuāpuaʻa",
-        "binomialNomenclature":"Rhinecanthus rectangulus",
-        "imgUrl":"https://upload.wikimedia.org/wikipedia/commons/5/52/Reef_Triggerfis	h_1.JPG"
-    },
-    "citiesUrl":"/states/hi/cities"
+	"abbreviation": "HI",
+	"name": "Hawaii",
+	"motto": "The Islands of Aloha",
+	"fish": {
+		"name": "Humuhumunukunukuāpuaʻa",
+		"binomialNomenclature": "Rhinecanthus rectangulus",
+		"imgUrl":
+			"https://upload.wikimedia.org/wikipedia/commons/5/52/Reef_Triggerfish_1.JPG"
+	},
+	"citiesUrl": "/states/hi/cities"
 }
 ```
 
@@ -62,15 +64,15 @@ Your API should support retrieving cities for a specified state using a URL of t
 ```json
 [
 	{
-		"name":"Honolulu",
+		"name": "Honolulu",
 		"population": 337256
 	},
 	{
-		"name":"Waipahu",
+		"name": "Waipahu",
 		"population": 38216
 	},
 	{
-		"name":"Wailuku",
+		"name": "Wailuku",
 		"population": 15313
 	}
 ]
