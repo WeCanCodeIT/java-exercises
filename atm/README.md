@@ -2,11 +2,11 @@
 
 ## Objective
 
-Design an `Atm` class and an `AtmClientApp` (with a `main` method) to simulate access and transactions that occur with an ATM (**A**utomatic **T**eller **Machine**).  The ATM should require the user to enter a 4 digit PIN (**P**ersonal **I**dentification **N**umber) to gain access.
+Using TDD, design an `Atm` class and an `AtmClientApp` (with a `main` method) to simulate access and transactions that occur with an ATM (**A**utomatic **T**eller **Machine**).  The ATM should require the user to enter a 4 digit PIN (**P**ersonal **I**dentification **N**umber) to gain access.
 
 ### Tasks
 
-Complete the following tasks in the given order, finishing one before moving on to the next (excepting stretch tasks).
+Complete the following tasks.
 
 Where these instructions mention prompting the user or displaying information, this should be done via console. Also, all of the console input/output should be done from the `AtmClientApp` class.
 
@@ -83,3 +83,13 @@ Enter a deposit amount
 50
 Updated bal is: 150.0
 ```
+### Using TDD to build out this project
+
+Here are the following asserts that will allow us to build out all of the requirements above through the process of TDD.
+- a test for a default balance
+- an ability to withdraw from that default balance
+- a limit on withdraw based on available balance
+- an ability to make an accurate deposit
+- an ability to allow access by PIN
+- an ability to deny access by PIN
+ 
