@@ -49,9 +49,9 @@ A `Course` can belong to many different topics.
 |"Intro to Java"|java|
 |"Advanced Software Design"|java, tdd|
 
-In essence many courses can be tied to many topics. 
+ 
 
-### The texts to build out this application 
+### The tests to build out this application 
 We will write the following unit tests to drive the creation of this project
 
 - save and load a topic
