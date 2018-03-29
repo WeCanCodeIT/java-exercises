@@ -30,7 +30,7 @@ The simplest of the entities we will create, the `Topic` will contain a name.
 
 ### The `Textbook` Table
 
-A `Textbook` has a name and will belong to a particular `Course`. 
+A `Textbook` has a name and and can be utilized in a number of different `Course`s. 
 
 |title|`Course`|
 |----|--------|
@@ -39,7 +39,6 @@ A `Textbook` has a name and will belong to a particular `Course`.
 |Clean Code|java102|
 |Intro to JPA|java102|
 
-In essence one textbook can be utilized in many different courses
 
 ### The `Course` Table
 
