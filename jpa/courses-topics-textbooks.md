@@ -44,10 +44,10 @@ A `Textbook` has a name and and can be utilized in a number of different `Course
 
 A `Course` can belong to many different topics. 
 
-|name|`Topic`|
-|----|--------|
-|"Intro to Java"|java|
-|"Advanced Software Design"|java, tdd|
+|name|description|`Topic`|
+|----|-----------|-------|
+|"Intro to Java"|"description"|java|
+|"Advanced Software Design"|"description"|java, tdd|
 
  
 
