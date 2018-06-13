@@ -43,52 +43,56 @@ Not an annotation but important to define:
 The following html resources are needed to `View` the application during run time. We will begin to go into deeper detail about these files on Wednesday and Thursday once we get into Front End Design with Intro to HTML and Thymeleaf. For now, copy these into your project so that you are able to see this application in action.
 
 In **templates package** create **`courses.html`** and paste the following code snippet
-```bash
+```html
 <!DOCTYPE HTML>
-
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
-<title>A list of courses</title>
+	<title>A List of All Available Courses</title>
 </head>
-
 <body>
+
 	<header>
-		<h1>A List of Courses</h1>
+		<h1>A List of All Courses</h1>
 	</header>
 	
-	<div th:each="course: ${courses}">
-		<h2>
-			<a th:href="@{/course(id=${course.id})}" th:text="${course.name}"></a>
-		</h2>
-	</div>
+	<main>
+		<ul>
+			<li th:each="course: ${courses}"><a th:href="@{/course(id=${course.id})}" th:text="${course.name}"></a></li>
+		</ul>
+	</main>
 
+	<footer>
+		<small>Copyright South Harmon Institute of Technology 2018</small>
+	</footer>
 
 </body>
 </html>
 ```
 
 In the **templates package**, create **`course.html`** and paste the following code snippet
-```bash
+```html
 <!DOCTYPE HTML>
-
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
-<title>A course</title>
+	<title th:text="${course.name}">A course</title>
 </head>
-
 <body>
 
 	<header>
-		<h1> A Course </h1>
+		<h1 th:text="${course.name}">A Course</h1>
 	</header>
 
-	<div th:each="course: ${courses}">
-		<h2 th:text="${course.name}"></h2>
+	<main>
+		<ol>
+			<li><a href="/courses">Courses</a></li>
+			<li th:text="${course.name}"></li>
+		</ol>
 		<h2 th:text="${course.description}"></h2>
-		<a href="http://localhost:8080/courses">Back to home</a>
-	</div>
+	</main>
+
+	<footer>
+		<small>Copyright South Harmon Institute of Technology 2018</small>
+	</footer>
 
 </body>
 </html>
