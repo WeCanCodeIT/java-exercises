@@ -1,89 +1,91 @@
-# Library Pair Programming/ Mobbing Activity
+# Library Pair Programming Activity
 
 ## Objectives
 
-- Students will use **Object Relational Mapping (ORM)** to connect entities together 
-- Students will become familiar with the tools of the CRUD Repository
-- Students will create data to test by @Override of the run method of CommandLineRunner
-- Students will complete this activity in a pair-programming setting or mobbing where one is always "driving" and one is "directing"
-- Students will create the following relationships:
-  -`@OneToMany`
-  -`@ManyToOne`
-  -`@ManyToMany`
-
+-   Wire up a JPA enabled web application that will control entities for courses, topics and textbooks
+-   Students will use **Object Relational Mapping (ORM)** to connect entities together
+-   Students will complete this activity in a pair-programming setting where one is always "driving" and one is "directing"
+-   Students will create the following relationships: -`@OneToMany` -`@ManyToOne` -`@ManyToMany`
 
 ## Setup
 
-Use the [Spring Initializr](https://start.spring.io) to create a `library-jpa` project, including the following dependencies:
-- Thymeleaf
-- JPA
-- H2
-- Devtools
+Use the [Spring Initializr](https://start.spring.io) to create a `courses-topics-textbooks-jpa` project, including the following dependencies:
+
+-   Devtools
+-   Web
+-   Thymeleaf
+-   JPA
+-   H2
 
 ## The Project Explanation
 
-Libraries categorize books by `Genre`. A `Book` can only belong to one `Genre` in our Library. Some of our authors are busy and they have written multiple books. An `Author` can also share duties, so multiple authors can write a single book. 
+The Columbus Metropolitan Library has gotten so overwhelmed with new material that they have just totally lost track of all of their books. Today we are going to help them by making a system that they can use to input and track books by authors or genre.
+
+## Entities
+
+You are encouraged to expand these tables with more options.
 
 ### The `Genre` Table
 
-|genre|
-|----|
-|Fiction|
-|Non Fiction|
+| id  | genre       |
+| --- | ----------- |
+| 1   | Fiction     |
+| 2   | Non Fiction |
+| 3   | Mystery     |
+| 4   | Technology  |
 
 ### The `Author` Table
 
-|firstName|lastName|
-|----|--------|
-|Kathy|Sierra|
-|Bert|Bates|
-|Elisabeth|Freeman|
-|Clifford|Stoll|
+| id  | firstName  | lastName |
+| --- | ---------- | -------- |
+| 1   | Kathy      | Sierra   |
+| 2   | Bert       | Bates    |
+| 3   | Elisabeth  | Freeman  |
+| 4   | Clifford   | Stoll    |
+| 5   | Steven D.  | Levitt   |
+| 6   | Stephen J. | Dubner   |
 
 ### The `Book` Table
 
-|genre|title|authors|
-|----|--------|---|
-|Non Fiction|Head First Design Patterns|Kathy Sierra, Bert Bates|
-|Non Fiction|Head First Java|Kathy Sierra, Elisabeth Freeman|
-|Fiction|The Cukoo's Egg|Clifford Stoll|
+| id  | title                      | authors | genre |
+| --- | -------------------------- | ------- | ----- |
+| 1   | Head First Design Patterns | 1, 2    | 4     |
+| 2   | Head First Java            | 1, 3    | 4     |
+| 3   | The Cukoo's Egg            | 4       | 1     |
+| 4   | Freakonomics               | 5, 6    | 2     |
 
-### Determine your relationships
+## Backend
 
-- One of our tables has a `@OneToMany` relationship.
-- One of our tables has a `@ManyToMany` relationship.
-- One of our tables has both a `@ManyToOne` and a `@ManyToMany` relationship.
+### Repository
 
-## Build out the necessary files
+Next, we need to build out `Repository`s to be able to store entities in our actual databases. Remeber what type of `Object` a `Repository` should be. Also, think about how many we will need.
 
-- An `@Entity` class for each table
-- A repository for each table
-- One or more `@Controller`s that handles requests
-- Each response should be a view rendered by one of the Thymeleaf templates `genres.html`, `authors.html`, or `books.html`
-- A populator to populate the database
+### Populator
 
-### Hints
+Following the `Repository`, we need to build out our table. So we need a `Populator` to add elements to their respective `Repository`.
 
-- The `@OneToMany` relationship will need to be `mappedBy`
-- The non-owning side of your `@ManyToMany` relationship will need to be `mappedBy`. Remember that in the case of a simple many-to-many relationship, deciding the "owning" side is arbitrary, chosen for convenience based on context.
-- In addition any other needful parameters, your `Book` constructor should handle multiple authors. It should look similar to this:
+### Controller
 
-  ```java
-  public Book(Foo foo, Bar bar, FooBar ... fooBar){
-      this.foo = foo;
-      this.bar = bar;
-      this.fooBar = new HashSet<>(Arrays.asList(fooBar));
-  }
-  ```
-- Remember, you can perform concatentation in Thymeleaf using the `+` operator. Use single quotes (`'`) to enclose Strings if you used double quotes (`"`) to enclose your `th:text` attribute value (or vice versa):
-  ```xml
-  <p th:text="${'Name: ' + item.firstName + ' ' + item.lastName}" />
-  ```
-- Or… Use literal substitutions:
-  ```xml
-  <p th:text="|Name: ${item.firstName} ${item.lastName}|" />
-  ```
+We are going to add routes to _all_ books, _a_ book, _all_ authors, _all_ genres, and home ("/"). Home should redirect you to the route for _all_ books.
 
-- Your view for `Genre` will simply list the genres.
-- Your view for `Author` will simply list the names of our authors.
-- Your view for `Book` will display genre, title, and author.
+## Frontend
+
+### HTML
+
+We will need to create `Thymeleaf` templates for each view in our `templates` directory. Make sure your semantics are correct for all information. Add navigation to the `<header>` element on all pages to navigate around your application.
+
+### CSS
+
+Add appropriate `CSS` for layout and styling of your `HTML` elements.
+
+### JS
+
+Optionally, include some `JS` to make this information interactive. Look to examples in previous projects and creatively use `JS`.
+
+## TDD
+
+### The tests to build out this application
+
+Make sure to appropriately test your `Java` (to include Spring elements) and `JS` (So please include Jasmine where it is appropriate). Look back at previous projects to see examples of what you should be doing.
+
+Time to roll the dice...
