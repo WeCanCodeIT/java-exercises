@@ -5,11 +5,14 @@
 -   Wire up a JPA enabled web application that will control entities for courses, topics and textbooks
 -   Students will use **Object Relational Mapping (ORM)** to connect entities together
 -   Students will complete this activity in a pair-programming setting where one is always "driving" and one is "directing"
--   Students will create the following relationships: -`@OneToMany` -`@ManyToOne` -`@ManyToMany`
+-   Students will create the following relationships:
+    -   `@OneToMany`
+    -   `@ManyToOne`
+    -   `@ManyToMany`
 
 ## Setup
 
-Use the [Spring Initializr](https://start.spring.io) to create a `courses-topics-textbooks-jpa` project, including the following dependencies:
+Use the [Spring Initializr](https://start.spring.io) to create a `library-restructure` project, including the following dependencies:
 
 -   Devtools
 -   Web
