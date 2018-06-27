@@ -60,7 +60,7 @@ A `Textbook` has a name and and can be utilized in a number of different `Course
 
 ### Repository
 
-Next, we need to build out `Repoistory`s to be able to store entities in our actual databases. Remeber what type of `Object` a `Repository` should be. Also, think about how many we will need.
+Next, we need to build out `Repository`s to be able to store entities in our actual databases. Remeber what type of `Object` a `Repository` should be. Also, think about how many we will need.
 
 ### Populator
 
