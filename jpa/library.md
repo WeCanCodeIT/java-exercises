@@ -65,7 +65,7 @@ Next, we need to build out `Repository`s to be able to store entities in our act
 
 ### Populator
 
-Following the `Repository`, we need to build out our table. So we need a `Populator` to add elements to their respective `Repository`.
+Following the `Repository`, we need to build out our databases tables. So we need a `Populator` to add elements to their respective `Repository`.
 
 ### Controller
 
@@ -83,7 +83,7 @@ Add appropriate `CSS` for layout and styling of your `HTML` elements.
 
 ### JS
 
-Optionally, include some `JS` to make this information interactive. Look to examples in previous projects and creatively use `JS`.
+Optionally, include some `JS` to make this information interactive. It is _cough cough_ **heavily** suggested you add some **useful** `JS`. Look to examples in previous projects and creatively use `JS`.
 
 ## TDD
 
