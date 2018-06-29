@@ -87,7 +87,7 @@ In the **templates package**, create **`course.html`** and paste the following c
 			<li><a href="/courses">Courses</a></li>
 			<li th:text="${course.name}"></li>
 		</ol>
-		<h2 th:text="${course.description}"></h2>
+		<p th:text="${course.description}"></p>
 	</main>
 
 	<footer>
