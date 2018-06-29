@@ -2,15 +2,13 @@
 
 ## Overview
 
-Return to your reviews site from the [previous exercise](../reviews-site) (or create another).
+Return to your reviews site from the [previous exercise](../reviews-site) (or create another). All requirements from the previous project still apply. If these aren't present, you will lose points.
 
 ## Creating a new repository from an existing one
 
-If you are continuing with your reviews site from the previous exercise, create a new GitHub repo based on a clone of your old project repo. Here's a simple way to go about that:
+If you are continuing with your reviews site from the previous exercise, create a new branch for the project. Inside of your project directory in your command line, type the following: `git checkout -b new-branch-name`. (replace 'new-branch-name' with an actual descriptive name)
 
-1.  Create another clone with a different name. The `git clone` command will accept an additional argument specifying a folder name, so you can do something like: `git clone http://github.com/myid/reviews-site reviews-site-full-stack`.
-1.  The `.git` folder is what establishes the folder in which it resides as a git repository. Remove the `.git` folder from this newly cloned repo. You can do this from Windows Explorer or by running `rm -rf .git` from Git Bash. Now it's no longer a git repository.
-1.  Treat it now just like any other new project: `git init`, etc.
+You can now look at the branches you have with `git branch` and you can switch between branches with `git checkout branch-name` (Make sure to `git add .` and `git commit -m "whatever your message is"` first!)
 
 We're going to add categories to reviews. Each category will have one or more reviews (a one to many relationship). Each review will be assigned to one category (a many to one relationship).
 
