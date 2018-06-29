@@ -2,19 +2,19 @@
 
 ## Objectives
 
--   Wire up a JPA enabled web application that will control entities for courses, topics and textbooks
--   Introduction to test driving a JPA enabled app
--   Develop an understanding of the annotations used to create the proper entity relationships
+*   Wire up a JPA enabled web application that will control entities for courses, topics and textbooks
+*   Introduction to test driving a JPA enabled app
+*   Develop an understanding of the annotations used to create the proper entity relationships
 
 ## Setup
 
 Use the [Spring Initializr](https://start.spring.io) to create a `courses-topics-textbooks-jpa` project, including the following dependencies:
 
--   Devtools
--   Web
--   Thymeleaf
--   JPA
--   H2
+*   Devtools
+*   Web
+*   Thymeleaf
+*   JPA
+*   H2
 
 ## The Project Explanation
 
@@ -78,7 +78,7 @@ We will need to create `Thymeleaf` templates for each view in our `templates` di
 
 ### CSS
 
-Add `CSS` for layout and styling of your `HTML` elements.
+Add `CSS` for layout and styling of your `HTML` elements. Make sure `HTML` is semantically marked.
 
 ### JS
 
@@ -92,11 +92,11 @@ These test should be added in conjunction to other frontend testing you should a
 
 We will write the following unit tests to drive the creation of this project:
 
--   save and load a topic
--   generate a topic id
--   save and load a course
--   save a textbook to a particular course
--   establish course to topics relationship
--   establish topic to courses relationship
--   find courses for a topic
--   find courses for a particular topic id
+*   save and load a topic
+*   generate a topic id
+*   save and load a course
+*   save a textbook to a particular course
+*   establish course to topics relationship
+*   establish topic to courses relationship
+*   find courses for a topic
+*   find courses for a particular topic id
