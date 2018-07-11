@@ -36,7 +36,7 @@ The url `/states` in your app should have a response similar to the following:
 ]
 ```
 
-Tip: use `@Embedded`/`@Embeddable` for the state fish. To start, just use a `String` representing the fish's name.
+Tip: use `@Embedded`/`@Embeddable` ([example](https://stackoverflow.com/questions/35174981/when-to-use-embedded-and-embeddable)) for the state fish. To start, just use a `String` representing the fish's name.
 
 ### Show an individual state
 
