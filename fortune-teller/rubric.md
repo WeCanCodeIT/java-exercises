@@ -19,5 +19,5 @@ Rubric for [Fortune Teller](./README.md)
 |mode of transportation based on favorite color|8|
 |bank balance based on birth month|8|
 |Display the fortune in the specified format|10|
-|Style/formatting/code quality:|10|
+|Style/formatting/code quality|10|
 |**Total:**|**100**|
