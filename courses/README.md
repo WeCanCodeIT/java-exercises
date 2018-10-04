@@ -29,7 +29,7 @@ Not an annotation but important to define:
   - contains appropriate constructor, and getters 
 - **`CourseRepository`**: 
 	- Creates 3 courses and puts them into the map we can use:
-		- `spring`, `Spring Framework`, `Spring Frameword Description`
+		- `spring`, `Spring Framework`, `Spring Framework Description`
 		- `java`, `Core Java`, `Core Java Description`
 		- `javascript`, `Intro to Javascript`, `Javascript Description`
  	- contains the ability to access the entire map's collection of courses or one course in the map
