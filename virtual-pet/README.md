@@ -1,24 +1,18 @@
 # Virtual Pet
 
-Create a virtual pet. Bonus points if it becomes a fad!
+Create a virtual pet. Maybe we can make this a fad!
 
 ## Setup
 
-- [ ] In Git Bash `mkdir virtual-pet`.
-- [ ] `cd` into the `virtual-pet` directory
-- [ ] copy and paste `curl https://raw.githubusercontent.com/WeCanCodeIT/gradle-scripts/master/basic-junit/build.gradle --output build.gradle`
-- [ ] type `ls` to make sure that you see a `build.gradle` inside of `virtual-pet`
-- [ ] type `gradle eclipse` to finish set up of your project in bash
-- [ ] in Eclipse, import existing project into workspace
+- [ ] Go to GitHub Classroom and accept the [Virtual Pet assignment](https://classroom.github.com/a/4d5DLe5S) by clicking on the green 'Accept this assignment' button.
+- [ ] Follow the link to your repository and then click on the green 'Clone or download' button.  Copy the URL onto your computer's clipboard.
+- [ ] Launch IntelliJ and go to File -> New -> Project From Version Control and paste the above URL into the URL field.  Make sure the directory is where you want the project to be on your computer.
 - [ ] Create a README.md file in your project folder to describe what you've done with your project. No fancy formatting is necessary. Just separate paragraphs with an empty line. (If you'd like to learn more about Markdown formatting, check out the [Github Markdown Guide](https://guides.github.com/features/mastering-markdown/).)
-- [ ] Create a GitHub repository also named `virtual-pet` and set it up so that you can push your code there from your Eclipse project. Do this *now*. It's the least fun part, so just get it out of the way.
 
 ## Classes
-- [ ] create a `VirtualPet` class.
-- [ ] create a `VirtualPetApp` class with a `main` method.
-- [ ] **Stretch goal** create a `VirtualPetTest` class to build out unit tests on the behaviors placed in `VirtualPet`
-- You should house your project in a properly named package...something other than the default package
-
+- [ ] You will need to create a `VirtualPet` class.
+- [ ] `VirtualPetApplication` will house the `main` method.  This is the starting point when the application runs.
+- [ ] **Stretch goal** Build out unit tests in the `VirtualPetTest` class to test the behaviors placed in `VirtualPet`
 
 ## Details
 
@@ -89,7 +83,18 @@ You feed Horace.
 
 ### Grading
 
-Here is the [rubric](./rubric.md).
+Your grading will be based on two areas:
+- Working Software
+- Clean Code
+
+#### Working Software
+Working software consists of does the application run and how well you met the requirements.  Of the 6 required tasks above, we need to see 5 complete for this category to be considered PASSING.
+
+#### Clean Code
+Clean code deals with how your code is written.  Is it readable, easy to understand, formatted, and not littered with commented out code?   These are the things we will be looking for:
+- Formatted code - This is the simplest task, use _CTRL + ALT + L_ to have IntelliJ format your code for you.
+- Variable and Method Names - Variables and method names should inform the reader what the purpose of the variable or method is.  A `feed()` method that affects the `hunger` field variable in your `VirtualPet` class is an example of good naming.
+- If you use descriptive method and variable names, your reliance on comments can be reduced.  And you should never leave blocks of commented out code in your committed code. 
 
 ### Stretch Tasks
 
