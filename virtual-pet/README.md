@@ -92,9 +92,12 @@ Working software consists of does the application run and how well you met the r
 
 #### Clean Code
 Clean code deals with how your code is written.  Is it readable, easy to understand, formatted, and not littered with commented out code?   These are the things we will be looking for:
+
 - Formatted code - This is the simplest task, use _CTRL + ALT + L_ to have IntelliJ format your code for you.
 - Variable and Method Names - Variables and method names should inform the reader what the purpose of the variable or method is.  A `feed()` method that affects the `hunger` field variable in your `VirtualPet` class is an example of good naming.
 - If you use descriptive method and variable names, your reliance on comments can be reduced.  And you should never leave blocks of commented out code in your committed code. 
+
+We are looking for adherence to all three of the above principles for this category to be considered PASSING.
 
 ### Stretch Tasks
 
