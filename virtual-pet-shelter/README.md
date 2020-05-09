@@ -1,25 +1,14 @@
 # Virtual Pet Shelter
 
-So, you have some experience under your belt in the care and feeding of a virtual pet. It's time to share that with the community! Time to volunteer!
+So, you have some experience under your belt in the care and feeding of a virtual pet. It's time to share that with the community! Time to volunteer! 
+
+Design a game that allows you to play the role of a pet shelter worker!
 
 ## Setup
-
-- [ ] Create a Java project in Eclipse named `virtual-pet-shelter`.
-- [ ] Be sure to set up your [testing environment](https://github.com/WeCanCodeIT/gradle-scripts) and use the second script, now that you have experience with both JUnit and Hamcrest.
-- [ ] Set up a `.gitignore`. Remember through bash you can type `subl .gitignore` and it will open a text editor for you. Its contents should include (at minimum):
-	```
-	.classpath
-	.gradle/
-	.project
-	.settings/
-	bin/
-	```
+- [ ] Go to GitHub Classroom and accept the [Virtual Pet Shelter assignment](https://classroom.github.com/a/MTjKz2Bn) by clicking on the green 'Accept this assignment' button.
+- [ ] Follow the link to your repository and then click on the green 'Clone or download' button.  Copy the URL onto your computer's clipboard.
+- [ ] Launch IntelliJ and go to File -> New -> Project From Version Control and paste the above URL into the URL field.  Make sure the directory is where you want the project to be on your computer.
 - [ ] Create a README.md file in your project folder to describe what you've done with your project. No fancy formatting is necessary. Just separate paragraphs with an empty line. (If you'd like to learn more about Markdown formatting, check out the [Github Markdown Guide](https://guides.github.com/features/mastering-markdown/).)
-- [ ] Create a GitHub repository also named `virtual-pet-shelter` and set it up so that you can push your code there from your Eclipse project. Do this *now*. It's the least fun part, so just get it out of the way.
-- Create the following classes along with the test class(es) you feel are necessary:
-	- [ ] `VirtualPet`: You can start with your class from last week's assignment or create another.
-	- [ ] `VirtualPetShelter`: Homeless virtual pets need a place to stay.
-	- [ ] `VirtualPetShelterApp`: This class will house your `main` method, and be responsible for reading user input and writing output to the console.
 
 ## Details
 
@@ -29,8 +18,8 @@ Include a game loop in this project, too. It should query the user, then call th
 
 ### Example Interactions
 
-```bash
-Thank you for volunteering at Big Al's Virtual Pet Shelter and Delicatessen!
+```
+Thank you for volunteering at Big Al\'s Virtual Pet Shelter and Delicatessen!
 
 This is the status of your pets:
 
@@ -54,11 +43,11 @@ What would you like to do next?
 #### Example Pet Selection Interaction
 
 ```bash
-Ok, so you'd like to play with a pet. Please choose one:
+Ok, so you\'d like to play with a pet. Please choose one:
 
-[Joey] looks like he's seen better days.
+[Joey] looks like he\'s seen better days.
 [Johnny] is a bit nervous.
-[Dee Dee] probably didn't start with that many legs.
+[Dee Dee] probably didn\'t start with that many legs.
 [Tommy] smells like a Stargazer lily fresh with morning dew.
 
 Which pet would you like to play with?
@@ -81,7 +70,7 @@ Ok, you play with Tommy.
 	- [ ] feeding all the pets
 	- [ ] watering all the pets
 	- [ ] playing with an individual pet, which should display a list of pet names and descriptions, allowing a user to select one
-	- [ ] allow adoption of a pet, which should display a list of pet names and descriptions, allowing a user to select one
+	- [ ] allow adoption of a pet, which should display a list of pet names and descriptions, allowing a user to select one.  _NOTE: In the past this has been a bit confusing.  Keep in mind you are playing the role of a shelter worker, if a pet is adopted it will be removed from the shelter._
 	- [ ] allow intake of a pet, prompting the user for the pet's information, requiring the user to (at minimum) specify name and description
 
 	(*Hint: you can use tab characters ("\t") to align console output in columns.*)
@@ -92,8 +81,8 @@ Ok, you play with Tommy.
 - [ ] include methods that:
 	- [ ] return a `Collection` of all of the pets in the shelter
 	- [ ] return a specific `VirtualPet` given its name
-	- [ ] allow intake of a homeless pet
-	- [ ] allow adoption of a homeless pet
+	- [ ] allow intake of a homeless pet (adding a pet to the shelter)
+	- [ ] allow adoption of a homeless pet (removing a pet from the shelter)
 	- [ ] feed all of the pets in the shelter
 	- [ ] water all of the pets in the shelter
 	- [ ] plays (or performs some other interaction(s)) with an individual pet in the shelter
@@ -101,18 +90,40 @@ Ok, you play with Tommy.
 
 ### VirtualPet class
 	
-In addition to the requirements from [last week's project](../virtual-pet):
-- include instance variables representing:
+In addition to the requirements from [last week's project](./virtual-pet):
+- [ ] include instance variables representing:
 	- [ ] name (from the above example, this might be "Tommy")
 	- [ ] description (from the above example, this might be "smells like a Stargazer lily fresh with morning dew")
-- include a constructor that accepts a name and description
-- include a constructor that, in addition to name and description, accepts default values for the pet's attributes (hunger, boredom, etc)
-
-Do **not** include a default (zero arguments) constructor.
-
+- [ ] include a constructor that accepts a name and description
+- [ ] include a constructor that, in addition to name and description, accepts default values for the pet's attributes (hunger, boredom, etc)
+- [ ] Do **not** include a default (zero arguments) constructor.
+ 
 ### Grading
+Your grading will be based on three areas:
+- Test Driven Development
+- Working Software
+- Clean Code
 
-Here is the [rubric](./rubric.md).
+#### Test Driven Development 
+You should write your code by writing tests first.  If you do so, each public method you write should have a unit test that covers its behavior.  The test classes should also be well maintained and follow the principles of clean code.  These are the things we are looking for with regards to Test Driven Development:
+
+- 75% of your public methods (excepting the `main()` in your app class) should be covered by unit tests.
+- The principles of _Clean Code_ as described below apply to your test classes.
+- All tests pass.
+
+#### Working Software
+Working software consists of does the application run and how well you met the requirements.  Of the 30 required tasks above, we need to see 25 complete for this category to be considered PASSING.
+
+#### Clean Code
+Clean code deals with how your code is written.  Is it readable, easy to understand, formatted, and not littered with commented out code?   These are the things we will be looking for:
+
+- Keep method chains to a minimum. (Three chained methods in the entire project are permissable.)
+- Formatted code - This is the simplest task, use _CTRL + ALT + L_ to have IntelliJ format your code for you.
+- Variable and Method Names - Variables and method names should inform the reader what the purpose of the variable or method is.  A `feed()` method that affects the `hunger` field variable in your `VirtualPet` class is an example of good naming.
+- If you use descriptive method and variable names, your reliance on comments can be reduced.  And you should never leave blocks of commented out code in your committed code. 
+
+
+We are looking for adherence to all four of the above principles for this category to be considered PASSING.
 
 ## Stretch Tasks
 
