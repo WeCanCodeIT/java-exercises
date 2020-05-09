@@ -1,5 +1,14 @@
 ## Creating a Shopping Cart using the ArrayList class
 
+### Exercise Link
+
+You can follow this link to generate your Cookie Order repository: [Module 3 - 
+Shopping Cart](https://classroom.github.com/a/iV-YxOyU)
+
+Once the your repository is generated:
+- Follow the link to your repository and then click on the green ‘Clone or download’ button. Copy the URL onto your computer’s clipboard.
+- Launch IntelliJ and go to File -> New -> Project From Version Control and paste the above URL into the URL field. Make sure the directory is where you want the project to be on your computer.
+
 ### The Item Class
 
 Create an **Item** class that models an Item to be purchased. It should contain instance data and a constructor to hold the following characteristics: name, price and quantity. Item class should also include accessor methods for the 3 characteristics and a toString summary.
