@@ -6,6 +6,14 @@ Your objective is to create an ArrayList project that keeps track of the variety
 keep track of your total number of boxes purchased. You are going to give the program the ability to remove a variety from the list
 just remember this may make the girl scout sad so please be kind.
 
+### Exercise Link
+
+You can follow this link to generate your Cookie Order repository: [Module 3 - Cookie Orders](https://classroom.github.com/a/BTpEeTEK)
+
+Once the your repository is generated:
+- Follow the link to your repository and then click on the green ‘Clone or download’ button. Copy the URL onto your computer’s clipboard.
+- Launch IntelliJ and go to File -> New -> Project From Version Control and paste the above URL into the URL field. Make sure the directory is where you want the project to be on your computer.
+
 ### The `CookieOrder` Class
 
 *   Write this class to keep track of 2 pieces of instance data: `variety` of cookie and `numBoxes` purchased
