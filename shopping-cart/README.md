@@ -1,4 +1,4 @@
-## Creating a Shopping Cart using the ArrayList class
+# Creating a Shopping Cart using the ArrayList class
 
 ### Exercise Link
 
@@ -8,6 +8,8 @@ Shopping Cart](https://classroom.github.com/a/iV-YxOyU)
 Once the your repository is generated:
 - Follow the link to your repository and then click on the green ‘Clone or download’ button. Copy the URL onto your computer’s clipboard.
 - Launch IntelliJ and go to File -> New -> Project From Version Control and paste the above URL into the URL field. Make sure the directory is where you want the project to be on your computer.
+
+## Instructions
 
 ### The Item Class
 
