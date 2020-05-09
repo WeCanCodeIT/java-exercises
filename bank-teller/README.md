@@ -1,5 +1,14 @@
 # Bank Teller
 
+## Exercise Link
+
+You can follow this link to generate your Cookie Order repository: [Module 3 - 
+Bank Teller](https://classroom.github.com/a/NRMiIuli)
+
+Once the your repository is generated:
+- Follow the link to your repository and then click on the green ‘Clone or download’ button. Copy the URL onto your computer’s clipboard.
+- Launch IntelliJ and go to File -> New -> Project From Version Control and paste the above URL into the URL field. Make sure the directory is where you want the project to be on your computer.
+
 ## Objective
 
 Design a banking application that handles standard interaction that a user would have with their bank.
