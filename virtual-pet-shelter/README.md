@@ -90,7 +90,7 @@ Ok, you play with Tommy.
 
 ### VirtualPet class
 	
-In addition to the requirements from [last week's project](./virtual-pet):
+In addition to the requirements from [last week's project](../virtual-pet):
 - [ ] include instance variables representing:
 	- [ ] name (from the above example, this might be "Tommy")
 	- [ ] description (from the above example, this might be "smells like a Stargazer lily fresh with morning dew")
